@@ -1,30 +1,57 @@
 ---
-title: "test"
-author: "Sebasti·n PeÒa"
+title: "Effectiveness analysis of Juntos Santiago cluster randomized trial"
+author: "Sebasti√°n Pe√±a, Crist√≥bal Cuadrado, Pedro Zitko, Jukka Konto"
 date: "18 December 2018"
 output: html_document
 ---
 
+## Introduction
+
+This is the script for the analysis of effectiveness of the cluster randomized Juntos Santiago trial. Outcomes as registered in ClinicalTrials.gov (NCT03459742)
+
+Primary outcome: Zscore
+Secondary outcomes: BMI, waist circumference, systolic blood pressure, diastolic blood pressure
+
+Individual level data: 
+Sex, age, class, nationality, National School Food Programme (PAE) y/n, educational level of parents, o
+
+School level data:
+Number of students, proportion male/female, Index of School Vulnerability (only for public and private-subsidized schools), type of school (public, private subsidized and private) and type of Administrator (e.g. Municipal, Religious, Non-religious).
+
+
+## Data management
+
+The dataset has been read from Excel and data has been managed in Stata. The uploaded Stata dataset already has the variables labelled and correctly defined. But sometimes the import of Stata leads to  problems, such as factor variables not recognized as such.
+
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+
 ```
 
-## R Markdown
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+## Exploratory data analysis
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+```{r setup, include=FALSE}
 
-```{r cars}
-summary(cars)
+
 ```
 
-## Including Plots
 
-You can also embed plots, for example:
+## Multilevel analysis to estimate mean difference at times T2 and T3
 
-```{r pressure, echo=FALSE}
-plot(pressure)
+```{r}
+
+
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+## Marginal effects to produce estimated means at T1, T2 and T3
+
+
+```{r}
+
+```
+
+## Graphs
+
+```{r}
+
+```
